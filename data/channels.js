@@ -55,22 +55,57 @@ window.FUNDING = {
       "symbol": "BTC",
       "name": "Bitcoin",
       "network": "Bitcoin",
-      "address": null,
-      "qr": null
+      "address": "bc1q3rumpdnv7dvh0m53ra2mmq85ygn274uch3qxuy",
+      "qr": "assets/qr/btc.svg"
     },
     {
       "symbol": "ETH",
       "name": "Ethereum",
       "network": "Ethereum",
-      "address": null,
-      "qr": null
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
     },
     {
       "symbol": "SOL",
       "name": "Solana",
       "network": "Solana",
-      "address": null,
-      "qr": null
+      "address": "DVLXpZuv2GHywbHmxYuEtdFxaWJaaDqjRyXUtBQYWJyK",
+      "qr": "assets/qr/sol.svg"
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "network": "Base",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
+    },
+    {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "network": "Solana",
+      "address": "DVLXpZuv2GHywbHmxYuEtdFxaWJaaDqjRyXUtBQYWJyK",
+      "qr": "assets/qr/sol.svg"
+    },
+    {
+      "symbol": "USDT",
+      "name": "Tether",
+      "network": "Ethereum",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "network": "Aurora",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
+    },
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "network": "Optimism",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
     },
     {
       "symbol": "LTC",
@@ -119,13 +154,6 @@ window.FUNDING = {
       "symbol": "BNB",
       "name": "BNB",
       "network": "BNB Smart Chain",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "ETH",
-      "name": "Ethereum",
-      "network": "Base",
       "address": null,
       "qr": null
     },
@@ -182,13 +210,6 @@ window.FUNDING = {
     {
       "symbol": "USDC",
       "name": "USD Coin",
-      "network": "Solana",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "USDC",
-      "name": "USD Coin",
       "network": "Base",
       "address": null,
       "qr": null
@@ -204,13 +225,6 @@ window.FUNDING = {
       "symbol": "USDC",
       "name": "USD Coin",
       "network": "Arbitrum One",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "USDT",
-      "name": "Tether",
-      "network": "Ethereum",
       "address": null,
       "qr": null
     },

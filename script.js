@@ -29,7 +29,7 @@ function render(){
    card.append(el('code','address',address));
    const actions=el('div','wallet-actions'),btn=el('button','copy','Copy address');
    btn.type='button';btn.setAttribute('aria-label','Copy '+w.symbol+' address on '+w.network);btn.addEventListener('click',()=>copy(address));actions.append(btn);card.append(actions);
-   if(typeof w.qr==='string' && /^assets\/qr\/[a-zA-Z0-9_-]+\.png$/.test(w.qr)){
+   if(typeof w.qr==='string' && /^assets\/qr\/[a-zA-Z0-9_-]+\.(?:png|svg)$/.test(w.qr)){
     const img=el('img','qr');img.src=w.qr;img.alt=w.symbol+' receiving address QR code on '+w.network;img.loading='lazy';card.append(img);
    }
    if(w.note)card.append(el('p','',w.note));
