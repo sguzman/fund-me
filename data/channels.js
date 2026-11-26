@@ -151,6 +151,44 @@ window.FUNDING = {
       "note": "TRC-20 only. TRX may be required to activate the receiving account and to pay outgoing fees."
     },
     {
+      "symbol": "XRP",
+      "name": "XRP",
+      "network": "XRP Ledger",
+      "address": "rGco4jkwbgKzfUnwdLbABBxtyykWZsV2BD",
+      "qr": "assets/qr/xrp.svg",
+      "note": "No destination tag required for this Exodus wallet. The network account reserve applies."
+    },
+    {
+      "symbol": "TRX",
+      "name": "TRON",
+      "network": "TRON",
+      "address": "TCL8fS8E7oQGtXfsShSniMKX2JHsa4Nddx",
+      "qr": "assets/qr/tron.svg"
+    },
+    {
+      "symbol": "POL",
+      "name": "Polygon",
+      "network": "Polygon PoS",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
+    },
+    {
+      "symbol": "AVAX",
+      "name": "Avalanche",
+      "network": "Avalanche C-Chain",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg",
+      "note": "C-Chain only."
+    },
+    {
+      "symbol": "ADA",
+      "name": "Cardano (BSC token)",
+      "network": "BNB Smart Chain",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg",
+      "note": "BNB Smart Chain token representation only; do not send native ADA on the Cardano network."
+    },
+    {
       "symbol": "ADA",
       "name": "Cardano",
       "network": "Cardano",
@@ -158,38 +196,9 @@ window.FUNDING = {
       "qr": null
     },
     {
-      "symbol": "XRP",
-      "name": "XRP",
-      "network": "XRP Ledger",
-      "address": null,
-      "qr": null,
-      "note": "Check whether a destination tag or memo is required."
-    },
-    {
-      "symbol": "TRX",
-      "name": "TRON",
-      "network": "TRON",
-      "address": null,
-      "qr": null
-    },
-    {
       "symbol": "ETH",
       "name": "Ethereum",
       "network": "Arbitrum One",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "POL",
-      "name": "Polygon",
-      "network": "Polygon PoS",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "AVAX",
-      "name": "Avalanche",
-      "network": "Avalanche C-Chain",
       "address": null,
       "qr": null
     },
