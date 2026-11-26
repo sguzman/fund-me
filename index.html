@@ -21,18 +21,23 @@
 <div class="hero-note">BUILD · EXPLORE · REPEAT</div>
 </section>
 <section class="purpose" aria-label="What your support enables"><div><span class="index">01 /</span><h2>Software</h2><p>Tools, applications and experiments that turn ideas into useful systems.</p></div><div><span class="index">02 /</span><h2>Mathematics</h2><p>Independent investigations, computational experiments and documented research.</p></div><div><span class="index">03 /</span><h2>Infrastructure</h2><p>Compute, testing, development time and the resources that keep projects moving.</p></div></section>
-<section id="ways" class="channels"><div class="section-head"><div><p class="eyebrow">01 / PAYMENT CHANNELS</p><h2>Support your way.</h2></div><p id="summary" role="status">Checking available channels…</p></div>
-<p class="intro">Choose a convenient way to contribute. Only channels marked available can accept contributions; the rest are being prepared.</p>
+<section id="ways" class="channels" aria-labelledby="support-title"><div class="section-head"><div><p class="eyebrow">01 / PAYMENT CHANNELS</p><h2 id="support-title">Support your way.</h2></div><p id="summary" role="status">Checking available channels…</p></div>
+<p class="intro">Choose the way you prefer to contribute. Only channels marked available can accept contributions.</p>
 <noscript><p class="notice">JavaScript is needed to display the payment directory. No payment information is collected by this site.</p></noscript>
-<div class="group"><h3>Recurring support</h3><div class="platform-grid" id="recurring"></div></div>
-<div class="group"><h3>One-time contributions</h3><div class="platform-grid" id="one-time"></div></div>
-</section>
-<section id="crypto" class="channels"><div class="section-head"><div><p class="eyebrow">02 / DIRECT TRANSFERS</p><h2>Cryptocurrency.</h2></div><p>Self-custody · Direct to wallet</p></div>
-<p class="intro">Use the exact asset and network listed. Sending to the wrong network can permanently lose funds. Never send to an unlisted address.</p>
+<div class="payment-tabs" role="tablist" aria-label="Payment methods">
+<button type="button" id="tab-one-time" role="tab" aria-controls="panel-one-time" aria-selected="false" tabindex="-1"><span>One-time contributions</span><span class="tab-count" aria-hidden="true" id="count-one-time"></span></button>
+<button type="button" id="tab-recurring" role="tab" aria-controls="panel-recurring" aria-selected="false" tabindex="-1"><span>Recurring support</span><span class="tab-count" aria-hidden="true" id="count-recurring"></span></button>
+<button type="button" id="tab-crypto" role="tab" aria-controls="panel-crypto" aria-selected="true" tabindex="0"><span>Cryptocurrency</span><span class="tab-count" aria-hidden="true" id="count-crypto"></span></button>
+</div>
+<div class="payment-panel" id="panel-one-time" role="tabpanel" aria-labelledby="tab-one-time" tabindex="0" hidden><p class="intro">Make a single contribution whenever you like. No subscription required.</p><div class="platform-grid" id="one-time"></div></div>
+<div class="payment-panel" id="panel-recurring" role="tabpanel" aria-labelledby="tab-recurring" tabindex="0" hidden><p class="intro">Support ongoing development and independent research through recurring contributions.</p><div class="platform-grid" id="recurring"></div></div>
+<div class="payment-panel" id="panel-crypto" role="tabpanel" aria-labelledby="tab-crypto" tabindex="0">
+<p class="intro">Self-custody · Direct to wallet. Use the exact asset and network listed. Sending to the wrong network can permanently lose funds. Never send to an unlisted address.</p>
 <div class="filters"><label for="search">Find a currency or network</label><input type="search" id="search" placeholder="Bitcoin, Solana, USDC…" autocomplete="off"><label class="toggle"><input type="checkbox" id="available"> Available only</label></div>
 <div id="wallets" class="wallet-list"></div><p id="empty" hidden>No matching channels.</p>
+</div>
 </section>
-<section class="closing"><p class="eyebrow">03 / THANK YOU</p><h2>Curiosity is worth supporting.</h2><p>Sharing a project, reporting a bug, or simply following along is also appreciated. Contributions are voluntary.</p><a href="https://github.com/sguzman">Explore my work ↗</a></section>
+<section class="closing"><p class="eyebrow">02 / THANK YOU</p><h2>Curiosity is worth supporting.</h2><p>Sharing a project, reporting a bug, or simply following along is also appreciated. Contributions are voluntary.</p><a href="https://github.com/sguzman">Explore my work ↗</a></section>
 </main>
 <footer class="wrap footer"><span>sguzman / fund-me</span><span>No accounts, tracking, or payment collection on this site.</span><a href="https://github.com/sguzman/fund-me">Source ↗</a></footer>
 <p id="feedback" class="toast" role="status" aria-live="polite" hidden></p>

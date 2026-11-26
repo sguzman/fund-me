@@ -41,3 +41,43 @@ function render(){
 $('search').addEventListener('input',render);$('available').addEventListener('change',render);render();
 const count=config.platforms.filter(p=>safeLink(p.url)).length+config.wallets.filter(addressOf).length;
 $('summary').textContent=count?count+' channels available':'Payment channels in preparation';
+
+/* Accessible, mutually exclusive payment tabs. */
+const tabKeys=['one-time','recurring','crypto'];
+const tabCounts={
+ 'one-time':config.platforms.filter(p=>p.kind==='one-time'&&safeLink(p.url)).length,
+ 'recurring':config.platforms.filter(p=>p.kind==='recurring'&&safeLink(p.url)).length,
+ 'crypto':config.wallets.filter(addressOf).length
+};
+for(const key of tabKeys){$('count-'+key).textContent=String(tabCounts[key]);}
+function activatePaymentTab(key,focus=false){
+ if(!tabKeys.includes(key))return;
+ for(const current of tabKeys){
+  const selected=current===key,tab=$('tab-'+current);
+  tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;
+  $('panel-'+current).hidden=!selected;
+ }
+ const n=tabCounts[key];
+ $('summary').textContent=n?n+' '+(n===1?'channel':'channels')+' available':'Payment channels in preparation';
+ if(focus)$('tab-'+key).focus();
+}
+function paymentTabFromHash(){
+ const hash=window.location.hash.slice(1);
+ return tabKeys.includes(hash)?hash:null;
+}
+for(const [i,key] of tabKeys.entries()){
+ const tab=$('tab-'+key);
+ tab.addEventListener('click',()=>activatePaymentTab(key));
+ tab.addEventListener('keydown',event=>{
+  let target;
+  if(event.key==='ArrowRight')target=tabKeys[(i+1)%tabKeys.length];
+  else if(event.key==='ArrowLeft')target=tabKeys[(i+tabKeys.length-1)%tabKeys.length];
+  else if(event.key==='Home')target=tabKeys[0];
+  else if(event.key==='End')target=tabKeys[tabKeys.length-1];
+  else return;
+  event.preventDefault();activatePaymentTab(target,true);
+ });
+}
+window.addEventListener('hashchange',()=>{const key=paymentTabFromHash();if(key){activatePaymentTab(key);$('ways').scrollIntoView();}});
+activatePaymentTab(paymentTabFromHash()||tabKeys.find(k=>tabCounts[k]>0)||'one-time');
+if(paymentTabFromHash())$('ways').scrollIntoView();
