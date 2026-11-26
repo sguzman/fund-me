@@ -49,7 +49,7 @@ const tabCounts={
  'recurring':config.platforms.filter(p=>p.kind==='recurring'&&safeLink(p.url)).length,
  'crypto':config.wallets.filter(addressOf).length
 };
-for(const key of tabKeys){$('count-'+key).textContent=String(tabCounts[key]);}
+for(const key of tabKeys){$('count-'+key).textContent=tabCounts[key]+' available';}
 function activatePaymentTab(key,focus=false){
  if(!tabKeys.includes(key))return;
  for(const current of tabKeys){
