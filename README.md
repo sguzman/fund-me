@@ -15,6 +15,6 @@ Edit `data/channels.js`. All entries start with a null address or URL and are di
 - Verify each address and network against the original wallet and each payment link against the intended account before publishing. Test a small payment when practical.
 - To deactivate an entry, set its address or URL back to null (also clear qr for a wallet).
 
-All assets are served locally; no external JavaScript, fonts, analytics, payment form, build step, or backend. Open index.html locally or serve the root with any static web server. GitHub Pages should serve main / (root).
+All assets are served locally; no external JavaScript, fonts, analytics, payment form, build step, or backend. Open index.html locally or serve the root with any static web server. GitHub Pages publishing source should be GitHub Actions. The Deploy funding website workflow runs on main pushes, manual dispatch, and a scheduled fallback for automated updates.
 
 The original SVG artwork is a geometric mountain sunrise inspired by the profile's visual direction, not the original Twitter banner.
