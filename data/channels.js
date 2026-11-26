@@ -111,22 +111,44 @@ window.FUNDING = {
       "symbol": "LTC",
       "name": "Litecoin",
       "network": "Litecoin",
-      "address": null,
-      "qr": null
+      "address": "LNrXAxF1o43y8vpednusx78StZaomdzqoQ",
+      "qr": "assets/qr/ltc.svg"
     },
     {
       "symbol": "DOGE",
       "name": "Dogecoin",
       "network": "Dogecoin",
-      "address": null,
-      "qr": null
+      "address": "DFMxzKLYQ1aCViUdupBRkdRv2Zg5feiSvN",
+      "qr": "assets/qr/doge.svg"
     },
     {
       "symbol": "BCH",
       "name": "Bitcoin Cash",
       "network": "Bitcoin Cash",
-      "address": null,
-      "qr": null
+      "address": "qp5qvnthd3fxrgrletsdl6ktdpt5lwv2vvxga38qkd",
+      "qr": "assets/qr/bch.svg"
+    },
+    {
+      "symbol": "BNB",
+      "name": "BNB",
+      "network": "BNB Smart Chain",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
+    },
+    {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "network": "Ethereum",
+      "address": "0x8599ae9425BCB3ad630f2486F5f97887514f34dc",
+      "qr": "assets/qr/evm.svg"
+    },
+    {
+      "symbol": "USDT",
+      "name": "Tether",
+      "network": "TRON",
+      "address": "TCL8fS8E7oQGtXfsShSniMKX2JHsa4Nddx",
+      "qr": "assets/qr/tron.svg",
+      "note": "TRC-20 only. TRX may be required to activate the receiving account and to pay outgoing fees."
     },
     {
       "symbol": "ADA",
@@ -147,13 +169,6 @@ window.FUNDING = {
       "symbol": "TRX",
       "name": "TRON",
       "network": "TRON",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "BNB",
-      "name": "BNB",
-      "network": "BNB Smart Chain",
       "address": null,
       "qr": null
     },
@@ -194,20 +209,6 @@ window.FUNDING = {
       "qr": null
     },
     {
-      "symbol": "XMR",
-      "name": "Monero",
-      "network": "Monero",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "USDC",
-      "name": "USD Coin",
-      "network": "Ethereum",
-      "address": null,
-      "qr": null
-    },
-    {
       "symbol": "USDC",
       "name": "USD Coin",
       "network": "Base",
@@ -225,13 +226,6 @@ window.FUNDING = {
       "symbol": "USDC",
       "name": "USD Coin",
       "network": "Arbitrum One",
-      "address": null,
-      "qr": null
-    },
-    {
-      "symbol": "USDT",
-      "name": "Tether",
-      "network": "TRON",
       "address": null,
       "qr": null
     },
